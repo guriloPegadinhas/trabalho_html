@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+
+<html style= "font-size: 30px; font-family: Arial, Helvetica, sans-serif ; "lang="pt-br">  
+
+
+
+    <body>
+        <p>
+            <script>
+                 const params = new URLSearchParams(window.location.search);
+                 const gmail = params.get('gmail');
+                 const senha = params.get('senha');
+                 console.log('Gmail:', gmail, 'Senha:', senha);
+                 document.body.innerHTML += `<p>Bem-vindo: ${gmail}</p>`;
+            </script>
+        </p>
+    </body>
+</html>
